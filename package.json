@@ -12,6 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
     "vite": "^6.0.11"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.3",
+    "react-youtube": "^10.1.0"
   }
 }
