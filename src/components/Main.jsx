@@ -27,11 +27,11 @@ export default function Main() {
     <div className="Main">
       <BrowserRouter>
         <Routes>
-          <Route path={"/Home"} element={<Home/>}></Route>
-          <Route path={"/Scene1"} element={<Dance scene="dance" songs={songs}/>}></Route>
-          <Route path={"/Scene2"} element={<Midnight scene="midnight" songs={songs}/>}></Route>
-          <Route path={"/Scene3"} element={<Drive scene="drive" songs={songs}/>}></Route>
-          <Route path={"/Scene4"} element={<Holiday scene="holiday" songs={songs}/>}></Route>
+          <Route path={"/Home/"} element={<Home/>}></Route>
+          <Route path={"/Scene1/"} element={<Dance scene="dance" songs={songs}/>}></Route>
+          <Route path={"/Scene2/"} element={<Midnight scene="midnight" songs={songs}/>}></Route>
+          <Route path={"/Scene3/"} element={<Drive scene="drive" songs={songs}/>}></Route>
+          <Route path={"/Scene4/"} element={<Holiday scene="holiday" songs={songs}/>}></Route>
         </Routes>
       </BrowserRouter>      
     </div>
