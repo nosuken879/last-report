@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <div>
-      <Header selectedScene={selectedScene} setSelectedScene={setSelectedScene} />
+      <Header setSelectedScene={setSelectedScene} />
       <Main selectedScene={selectedScene} />
       <Footer />
     </div>

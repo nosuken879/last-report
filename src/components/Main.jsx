@@ -6,7 +6,7 @@ import Midnight from "./Scene2";
 import Drive from "./Scene3";
 import Holiday from "./Scene4";
 
-export default function Main() {
+export default function Main({selectedScene}) {
   const songs = [
     {videoId:"OPf0YbXqDm0", title:"Mark Ronson ft.Bruno Mars - Uptown Funk", text:"アガる曲といったらやっぱりBruno Marsですよね！\n 老若男女問わず楽しく踊れちゃう超ファンキーな曲です！", scene: "dance"},
     {videoId:"1WTy2yqKI4w", title:"Perfume - チョコレイト・ディスコ", text:"こちらも誰でもアガれる超有名曲！ \n かわいい歌詞とノリノリのビートでアガっちゃいましょう！", scene: "dance"},
@@ -27,11 +27,12 @@ export default function Main() {
     <div className="Main">
       <BrowserRouter>
         <Routes>
-          <Route path={"./Home"} element={<Home/>}></Route>
-          <Route path={"./Scene1"} element={<Dance scene="dance" songs={songs}/>}></Route>
-          <Route path={"./Scene2"} element={<Midnight scene="midnight" songs={songs}/>}></Route>
-          <Route path={"./Scene3"} element={<Drive scene="drive" songs={songs}/>}></Route>
-          <Route path={"./Scene4"} element={<Holiday scene="holiday" songs={songs}/>}></Route>
+          <Route path={"/"} element={<Home/>}></Route>
+          <Route path={"/Home"} element={<Home/>}></Route>
+          <Route path={"/Scene1"} element={<Dance scene={selectedScene} songs={songs}/>}></Route>
+          <Route path={"/Scene2"} element={<Midnight scene={selectedScene} songs={songs}/>}></Route>
+          <Route path={"/Scene3"} element={<Drive scene={selectedScene} songs={songs}/>}></Route>
+          <Route path={"/Scene4"} element={<Holiday scene={selectedScene} songs={songs}/>}></Route>
         </Routes>
       </BrowserRouter>      
     </div>
