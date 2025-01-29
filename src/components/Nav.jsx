@@ -1,6 +1,6 @@
 import { BrowserRouter, Link} from "react-router-dom";
 
-export default function Nav({setSelectedScene}) {
+export default function Nav() {
   const handleSceneChange = (scene) => {
     setSelectedScene(scene);
   }
